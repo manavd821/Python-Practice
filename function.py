@@ -41,3 +41,16 @@
 # print(next(count))
 # print(count)
 
+# clouser and function inside function
+def any_power(power):
+    def actual(a):
+        return a ** power
+    return actual
+
+
+square = any_power(2)
+print(square(5))
+cube = any_power(3)
+print(cube(5))
+power_four = any_power(4)
+print(power_four(5))
