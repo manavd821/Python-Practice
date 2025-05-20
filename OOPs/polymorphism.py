@@ -51,3 +51,7 @@ print(ElectricCar.general_description()) # child can also access the static meth
 new_car = Car("safari", "ABC")
 # new_car.brand = "city"
 print(new_car.brand)
+
+print(isinstance(my_car, Car))
+print(isinstance(my_tesla, Car))
+print(isinstance(my_tesla, ElectricCar))
