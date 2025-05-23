@@ -6,6 +6,8 @@ class Car:
 
     def full_name(self):
         return f"{self.brand}, {self.model}"
+    def __repr__(self):
+        return f"Car = '{self.brand}'"
 # inheritance
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -22,3 +24,4 @@ print(my_car.full_name())
 my_tesla = ElectricCar("Tesla", "Model S", "85kWh")
 print(my_tesla.brand)
 print(my_tesla.full_name())
+print(my_car)
