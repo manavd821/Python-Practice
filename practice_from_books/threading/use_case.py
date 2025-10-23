@@ -23,7 +23,7 @@ img_urls = [
 ]
 start = time.perf_counter()
 
-dir_name = pathlib.Path('photo')
+dir_name = pathlib.Path('photos')
 dir_name.mkdir(exist_ok=True)
 
 def download_image(img_url, i):
